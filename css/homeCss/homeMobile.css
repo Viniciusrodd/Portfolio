@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+
+:root{
+    --backgroundPageColor: #EDE9E8;
+    --hoversColor: #3b70c6;
+    --borders: #0f1318;
+    --borders2: #3D72C8;
+    --h3Color: #B91C1C;
+    --containers: #ffc4c4;
+}
+
+@media screen and (max-width: 767px){
+    
+    /* header */
+    
+    .container-header{
+        flex-direction: column;
+        height: 30vh;
+    }
+    
+    .logo{
+        margin: 0px 0px 10px 0px;
+    }
+    
+    header{
+        height: 30%;
+        width: 90%;
+    
+        & ul{
+            width: 100%;
+    
+            & li{
+                font-size: 16px;
+            }
+            & li:hover{
+                transform: none;
+            }
+    
+            & a:hover{
+                color: black;
+            }
+        }
+    }
+
+    /*section*/
+
+    .section{
+        flex-direction: column;
+        height: 60vh;
+
+        & .section-message{
+            height: 100%;
+            width: 100%;
+        }
+
+        & .section-video{
+            display: none;
+        }
+    }
+
+    /*social medias*/
+
+    ul.social-medias-container{
+        width: 90%;
+
+        & li:hover{
+            transform: none;
+        }
+    }
+
+}

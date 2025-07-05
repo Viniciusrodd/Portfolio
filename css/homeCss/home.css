@@ -58,7 +58,6 @@ a{
     background-position: center center;
 }
 
-
 header{
     display: flex;
     justify-content: center;
@@ -75,6 +74,7 @@ header{
         height: 100%;
         width: 90%;
         list-style-type: none;
+        padding: 0px;
 
         & li{
             font-size: 18px;
@@ -180,6 +180,7 @@ ul.social-medias-container{
     height: 100px;
     width: 50%;
     margin-top: 20px;
+    padding: 0px;
 
     & li{
         display: flex;
