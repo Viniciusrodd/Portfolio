@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* configurações gerais */
+
+
+*{
+    font-family: 'Inter';
+}
+
+:root{
+    --backgroundPageColor: #EDE9E8;
+    --hoversColor: #3b70c6;
+    --borders: #0f1318;
+    --borders2: #3D72C8;
+    --h3Color: #B91C1C;
+    --containers: #ffc4c4;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--backgroundPageColor);
+}
+
+hr{
+    width: 80%;
+    height: 2px;
+    background-color: var(--borders2);
+    border: none;
+    margin: 0px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* header */
+
+.container-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 19vh;
+    width: 100%;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin-right: 50px;
+    background-image: url(../images/profile.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+
+    & ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 90%;
+        list-style-type: none;
+
+        & li{
+            font-size: 18px;
+            transition: transform 0.3s;
+        }
+        & li:hover{
+            transform: scale(1.05 ,1.05);
+        }
+
+        & a{
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+        & a:hover{
+            color: var(--hoversColor);
+        }
+    }
+}
+
+/* section */
+
+.section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 0px 40px 0px;
+    width: 100%;
+}
+
+/*section*/
+
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    height: 50vh;
+    width: 80%;
+
+    & .section-message{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 90%;
+        width: 50%;
+        border-left: 3px solid var(--borders2);
+        border-radius: 10px 0px 0px 10px;
+
+        & h2{
+            font-size: 28px;
+            color: #3D72C8;
+            margin: 0px;
+        }
+
+        & h3{
+            font-size: 20px;
+            color: #3D72C8;
+            margin: 8px;
+        }
+
+        & p{
+            font-size: 23px;
+            font-family: "Libre Baskerville", serif;
+            font-style: italic;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-align: center;
+            width: 70%;
+        }
+    }
+
+    & .section-video{
+        height: 90%;
+        width: 50%;
+        overflow: hidden;
+        position: relative;
+        border-radius: 0px 10px 10px 0px;
+        transition: transform 0.3s;
+
+        & video{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    & .section-video:hover{
+        transform: scale(1.03 ,1.03);
+    }
+}
+
+/*social medias*/
+
+ul.social-medias-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    height: 100px;
+    width: 50%;
+    margin-top: 20px;
+
+    & li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: bold;
+        transition: transform 0.3s;
+        cursor: pointer;
+
+        & img{
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+        }
+    }
+    & li:hover{
+        transform: scale(1.05 ,1.05);
+    }
+}
