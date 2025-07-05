@@ -86,7 +86,7 @@ mark{
             height: 100%;
             width: 42%;
             padding: 0px;
-            border-left: 3px solid var(--borders2);
+            border-left: 3px solid black;
             list-style-type: none;
 
             & h1{
@@ -115,7 +115,7 @@ mark{
             align-items: center;
             height: 100%;
             width: 55%;
-            border: 3px solid var(--borders2);
+            border: 3px solid black;
             border-radius: 10px;
             transition: transform 0.3s ease-in-out;
 

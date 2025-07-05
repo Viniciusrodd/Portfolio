@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* configurações gerais */
+
+:root{
+    --backgroundPageColor: #EDE9E8;
+    --backgroundDesc: #00245f9b;
+    --hoversColor: #3b70c6;
+    --borders: #0f1318;
+    --borders2: #3D72C8;
+    --h3Color: #B91C1C;
+    --h3Color2: #656887;
+    --pColor: #656887;
+    --containers: #ffc4c4;
+}
+
+mark{
+    font-weight: bolder;
+    color: #52556f;
+    background-color: transparent;
+}
+
+
+/*section*/
+.title{
+    font-style: italic;
+    font-family: "Libre Baskerville", serif;    
+    font-size: 45px;
+    margin: 20px 0px 30px 0px;
+}
+
+.project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    width: 80%;
+    background-image: linear-gradient(to right, #EDE9E8, rgba(182, 182, 182, 0.241), #EDE9E8);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 8%;
+}
+
+.project-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width: 45%;
+    /*border: 2px solid black;*/
+
+    & h3{
+        color: var(--h3Color2);
+        font-size: 18px;
+        margin: 0px;
+    }
+
+    & h2{
+        font-family: "Libre Baskerville", serif;
+        font-style: italic;
+        letter-spacing: 2px;
+        font-size: 32px;
+        margin: 5px 0px 15px 0px;
+    }
+
+    & p{
+        font-size: 18px;
+        width: 80%;
+        margin: 10px 0px 10px 0px;
+        color: var(--pColor);
+    }
+
+}
+
+.project-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 55%;
+
+    & a{
+        margin: 0px 0px 10px 0px;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+        transition: transform 0.3s ease-in-out;
+
+        & img{
+            height: 30px;
+            width: 30px;
+        }
+    }
+    & a:hover{
+        color: var(--hoversColor);
+        transform: scale(1.03 ,1.03);
+    }
+
+    & img{
+        z-index: 1;       
+        height: 50vh;
+        width: 95%;
+        border-radius: 10px;
+    }
+
+    & .border{
+        position: absolute;
+        height: 50vh;
+        width: 40%;
+        margin: 10% 10% 0px 0px;
+        border: 3px solid var(--borders2);
+        border-radius: 10px;        
+    }
+}
