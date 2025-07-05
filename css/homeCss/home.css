@@ -53,7 +53,7 @@ a{
     width: 100px;
     border-radius: 100%;
     margin-right: 50px;
-    background-image: url(../images/profile.jpg);
+    background-image: url(../../images/profile.jpg);
     background-size: cover;
     background-position: center center;
 }
