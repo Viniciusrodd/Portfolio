@@ -11,12 +11,13 @@
     --h3Color: #B91C1C;
     --h3Color2: #656887;
     --pColor: #656887;
+    --markColor: #52556f;
     --containers: #ffc4c4;
 }
 
 mark{
     font-weight: bolder;
-    color: #52556f;
+    color: var(--markColor);
     background-color: transparent;
 }
 
@@ -81,15 +82,15 @@ mark{
     width: 65%;
 
     & a{
-        margin: 0px 0px 10px 0px;
-        font-size: 20px;
+        margin: 0px 0px 5px 0px;
+        font-size: 17px;
         font-weight: bold;
         text-decoration: underline;
         transition: transform 0.3s ease-in-out;
 
         & img{
-            height: 30px;
-            width: 30px;
+            height: 25px;
+            width: 25px;
         }
     }
     & a:hover{

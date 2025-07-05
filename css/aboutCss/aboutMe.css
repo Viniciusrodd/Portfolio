@@ -9,6 +9,9 @@
     --borders: #0f1318;
     --borders2: #3D72C8;
     --h3Color: #B91C1C;
+    --h3Color2: #656887;
+    --pColor: #656887;
+    --markColor: #52556f;
     --containers: #ffc4c4;
 }
 
@@ -98,6 +101,8 @@ mark{
             }
 
             & li{
+                color: var(--pColor);
+                font-weight: 600;
                 font-size: 23px;
                 text-align: left;
                 width: 90%;

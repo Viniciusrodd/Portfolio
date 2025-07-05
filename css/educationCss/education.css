@@ -9,6 +9,9 @@
     --borders: #0f1318;
     --borders2: #3D72C8;
     --h3Color: #B91C1C;
+    --h3Color2: #656887;
+    --pColor: #656887;
+    --markColor: #52556f;
     --containers: #ffc4c4;
 }
 
@@ -46,6 +49,8 @@ mark{
         font-style: italic;
         font-family: "Libre Baskerville", serif;
         margin: 10px 0px 30px 0px;
+        letter-spacing: 2px;
+        color: var(--h3Color2);
     }
 
     & .education-data{

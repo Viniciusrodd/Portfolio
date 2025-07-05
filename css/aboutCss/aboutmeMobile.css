@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* configurações gerais */
+
+:root{
+    --backgroundPageColor: #EDE9E8;
+    --backgroundDesc: #00245f9b;
+    --hoversColor: #3b70c6;
+    --borders: #0f1318;
+    --borders2: #3D72C8;
+    --h3Color: #B91C1C;
+    --h3Color2: #656887;
+    --pColor: #656887;
+    --markColor: #52556f;
+    --containers: #ffc4c4;
+}
+
+@media screen and (max-width: 767px){
+
+    /* section */
+
+    .section-aboutme{
+        flex-direction: column;
+        height: 120vh;
+        width: 80%;
+
+        /* imagem */
+
+        & .section-image{
+            height: 80%;
+            width: 90%;
+
+            & h1{
+                font-size: 26px;
+            }
+
+            & img{
+                height: 65%;
+                width: 45%;
+            }
+            & img:hover{
+                transform: none;
+            }
+        }    
+
+        & .border{
+            top: 48%;
+            left: 30%;
+            height: 20%;
+            width: 30%;
+        }
+
+        /* descrição */
+
+        & .section-desc{
+            flex-direction: column;
+            height: 90%;
+            width: 90%;
+
+            & ul.desc1{
+                height: 50%;
+                width: 90%;
+
+                & h1{
+                    font-size: 25px;
+                }
+
+                & li{
+                    font-size: 20px;
+                }
+                & li:hover{
+                    color: var(--pColor);
+                    transform: none;
+                }
+            }
+
+            & .desc2{
+                width: 90%;
+            }
+            & .desc2:hover{
+                transform: none;
+            }
+        }
+    }
+}

@@ -65,6 +65,7 @@ header{
     height: 50%;
     width: 70%;
     background-color: white;
+    border-bottom: 3px solid var(--borders2);
     border-radius: 10px;
 
     & ul{
@@ -81,7 +82,7 @@ header{
             transition: transform 0.3s;
         }
         & li:hover{
-            transform: scale(1.05 ,1.05);
+            transform: scale(1.02 ,1.02);
         }
 
         & a{
