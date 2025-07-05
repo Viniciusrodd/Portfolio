@@ -78,7 +78,7 @@ mark{
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 55%;
+    width: 65%;
 
     & a{
         margin: 0px 0px 10px 0px;
@@ -94,7 +94,7 @@ mark{
     }
     & a:hover{
         color: var(--hoversColor);
-        transform: scale(1.03 ,1.03);
+        transform: scale(1.01 ,1.01);
     }
 
     & img{

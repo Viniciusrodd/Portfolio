@@ -46,20 +46,20 @@
             
             </div>
             <div class="form-container">
-                <h1 class="title">Entre em contato &#128075;</h1>
+                <h1 class="title" id="contact-message">Entre em contato &#128231;</h1>
 
-                <form action="#" method="post" autocomplete="off">
+                <form action="#" method="post" autocomplete="off" onsubmit="handleForm(event)">
                     <div class="data">
                         <label for="nome">Nome completo</label>
-                        <input type="text" name="nome" required>
+                        <input type="text" name="nome" required id="name">
     
                         <label for="email">Email</label>
-                        <input type="text" name="email" required>
+                        <input type="text" name="email" required id="email">
     
                         <label for="mensagem">Mensagem</label>
-                        <input type="text" name="mensagem" required>
+                        <input type="text" name="mensagem" required id="message">
     
-                        <button>
+                        <button id="btt">
                             Entrar em contato
                         </button>
                     </div>
@@ -69,7 +69,6 @@
                             <h2>Contato</h2>
                             <p>viniciususer22@gmail.com</p>
                         </div>
-                        <hr>
 
                         <div class="infos">
                             <h2>Moro em</h2>
@@ -103,4 +102,24 @@
         </section>
     </section>
 </body>
+
+<script>    
+    // form
+    const handleForm = (e) =>{
+        e.preventDefault();
+        
+        // fields values
+        const name = document.getElementById('name');
+        const btt = document.getElementById('btt');
+        const contactMessage = document.getElementById('contact-message');
+
+        contactMessage.innerHTML = `Obrigado por entrar em contato <ins>${name.value}</ins> 😄`;
+        btt.innerText = 'Aguarde...'
+        setTimeout(() =>{
+            window.location.reload();
+        }, 3000);
+
+        return false;
+    };
+</script>
 </html>

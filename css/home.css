@@ -126,6 +126,7 @@ header{
         width: 50%;
         border-left: 3px solid var(--borders2);
         border-radius: 10px 0px 0px 10px;
+        background-image: linear-gradient(to right, rgba(169, 169, 169, 0.241), #EDE9E8, #EDE9E8);
 
         & h2{
             font-size: 28px;
