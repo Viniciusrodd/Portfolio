@@ -109,9 +109,9 @@
         e.preventDefault();
         
         // fields values
-        const name = document.getElementById('name');
-        const btt = document.getElementById('btt');
-        const contactMessage = document.getElementById('contact-message');
+        let name = document.getElementById('name');
+        let btt = document.getElementById('btt');
+        let contactMessage = document.getElementById('contact-message');
 
         contactMessage.innerHTML = `Obrigado por entrar em contato <ins>${name.value}</ins> 😄`;
         btt.innerText = 'Aguarde...'

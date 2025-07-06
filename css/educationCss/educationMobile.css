@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* configurações gerais */
+
+:root{
+    --backgroundPageColor: #EDE9E8;
+    --backgroundDesc: #00245f9b;
+    --hoversColor: #3b70c6;
+    --borders: #0f1318;
+    --borders2: #3D72C8;
+    --h3Color: #B91C1C;
+    --h3Color2: #656887;
+    --pColor: #656887;
+    --markColor: #52556f;
+    --containers: #ffc4c4;
+}
+
+mark{
+    color: white;
+    background-color: var(--borders2);
+}
+
+@media screen and (max-width: 767px){
+    /*section*/
+
+    .section-education{
+        width: 100%;
+
+        & .education-data{
+            width: 90%;
+        }
+        .education-data:hover{
+            transform: none;
+        }
+    }
+}
