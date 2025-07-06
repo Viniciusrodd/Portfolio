@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* configurações gerais */
+
+:root{
+    --backgroundPageColor: #EDE9E8;
+    --backgroundDesc: #00245f9b;
+    --hoversColor: #3b70c6;
+    --borders: #0f1318;
+    --borders2: #3D72C8;
+    --h3Color: #B91C1C;
+    --h3Color2: #656887;
+    --pColor: #656887;
+    --containers: #ffc4c4;
+}
+
+@media screen and (max-width: 767px){
+
+    /*section*/
+
+    .message-form{
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+
+        & .message-img{
+            height: 25vh;
+            width: 40%;
+        }
+
+        & .form-container{
+            width: 100%;
+
+            & .title{
+                font-size: 30px;
+                letter-spacing: 1px;
+            }
+
+            & form{
+
+                & .data{
+                    align-items: flex-start;
+                    width: 40%;
+                }
+
+                & .contact{
+                    width: 60%;
+
+                    & .infos{
+
+                        & h2{
+                            font-size: 20px;
+                        }
+
+                        & p{
+                            font-size: 17px;
+                        }
+                    }
+
+                    & .socials{
+                        justify-content: space-between;
+
+                        & li:hover{
+                            transform: scale(1.05 ,1.05);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    input{
+        width: 90%;
+    }
+
+    button{
+        width: 90%;
+    }
+    button:hover{
+        background-color: #0f1318;
+        transform: none;
+    }
+}
